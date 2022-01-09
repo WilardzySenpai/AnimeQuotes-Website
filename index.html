@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AnimeQuotes | Home</title>
+    <link rel="stylesheet" type"text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.jpg">
+    <script scr="script.js"></script>
+    <!-- Embed -->
+  <meta name="theme-color" content="#00008B">
+  <!--Light Blue default Its the embed color-->
+  <meta name="title" content="AnimeQuote - DiscordAnime bot">
+  <!--The link title in the embed-->
+  <meta name="description" content="AnimeQuote - Is a very simple discord bot, AnimeQuote will send a random quote from the anime in chat and it has time spawn that will decided by YOU!">
+  <!--Description ofc-->
+  <meta name="keywords" content="AnimeQuote, Best DiscordAnime bot, vote, setup, website!"><!--Some SEO so google can find your website on search better-->
+  <meta name="robots" content="index, follow"><!-- Ignorable -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  </head>
+  <body>
+    <!-- Disable right click  -->
+    <body oncontextmenu="return false">
+    <header>
+      <a href="#" class="logo">SkyAni</a>
+      <ul>
+        <li><a href="https://discord.com/login?redirect_to=%2Foauth2%2Fauthorize%3Fclient_id%3D863419266664366090%26permissions%3D2147739712%26scope%3Dbot%2520applications.commands" class="active">Invite</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://animequotes.gq/">Generator</a></li>
+        <li><a href="https://discord.com/invite/WCtrHrQ98j">Support</a></li>
+      </ul>
+    </header>
+    <section>
+     <img src="img/stars.png" id="stars">
+     <img src="img/moon.png" id="moon">
+     <img src="img/mountains_behind.png" id="mountains_behind">
+     <h2 id="text">SkyAnime</h2>
+     <a href="#sec" id="btn">Commands</a>
+     <img src="img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+      <h2>AnimeQuotes - Commands</h2>
+      <p>help - Show's all the useable commands by a user.<br><br>setup - Set up the bot automatically send random quotes without using the commands /aquote.<br><br>delete - Delete the quote queue in the channel.<br><br>/aquote - Send a random quote message manually.</p>
+    </div>
+    <div class="sec" id="about">
+      <h2 class="glow2">About</h2>
+      <p>Hello first i would like to thank you for using the bot and visiting AnimeQuotes website, Anyways this is SadSenpai TheMainProtagonist about AnimeQuotes aniquotes is a simple anime discord bot ofc that send a random quotes from anime, this bot is like DeadAlive and Mudae bot but only quotes ;> maybe in the future i'll more commands and fun stuff.</p>
+    </div>
+    <script>
+      let stars = document.getElementById('stars');
+      let moon = document.getElementById('moon');
+      let mountains_behind = document.getElementById('mountains_behind');
+      let text = document.getElementById('text');
+      let btn = document.getElementById('btn');
+      let mountains_front = document.getElementById('mountains_front');
+      let header = document.querySelector('header')
+
+      window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        mountains_behind.style.top = value * 0.5 + 'px';
+        mountains_front.style.top = value * 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+      })
+    </script>
+  </body>
+  <footer>
+    <ul class="social_icon">
+      <li><a href="https://discord.com/users/801334443281219584"><ion-icon name="logo-discord"></ion-icon></a></li>
+      <li><a href="https://www.facebook.com/NinoEdits"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      <li><a href="https://www.instagram.com/wilard.icon/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      <li><a href="https://www.youtube.com/wilardzysenpai"><ion-icon name="logo-youtube"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+      <li><a href="https://animequotes.tk/">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="https://animequotes.gq">Generator</a></li>
+      <li><a href="https://discord.com/invite/WCtrHrQ98j">Support</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <p>© 2021 - 2021 AnimeQuote - "The ticket to the future is always open."</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script scr="script.js"></script>
+</html>
+<!-- disable f12 -->
+<script src="http://sibeeshpassion.com/content/scripts/jquery-1.11.1.min.js"></script>
+<script>  
+document.onkeypress = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+document.onmousedown = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+document.onkeydown = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+</script>

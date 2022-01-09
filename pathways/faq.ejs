@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AnimeQuotes | FAQ</title>
+    <link rel="stylesheet" type"text/css" href="css/faq.css"> 
+    <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/813417387449516062/926062696481325106/AIAA.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script scr="script.js"></script>
+  </head>
+  <body>
+  <%- include("components/scroll.ejs") %>
+  <%- include("components/loading.ejs") %>
+  <%- include("components/headers.ejs") %>
+    <body>
+        <section>
+            <h2 class="title">FAQ's</h2>
+            <div class="faq">
+                <div class="question">
+                    <h3>How can i change the prefix?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        You can't change the prefix of the bot, why? AnimeQuotes is using slash command not prefix.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question">
+                    <h3>Why i can't set the timer below 30mins?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        We can't allow that. 1st it will be annoying to the user's. 2nd High ping perfomance might crash the bot. 3rd There's no point.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question">
+                    <h3>Does AnimeQuotes collect data?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        Nope. we don't collect or store any data.
+                        we only detect what server our bot joined.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question">
+                    <h3>Who is the man in the logo?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        Roy Mustang, from Fullmetal Alchemist
+                        <p style="font-style: italic;">"The world isn't perfect. But it's there for us, doing the best it can....that's what makes it so damn beautiful."
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question">
+                    <h3>Why is there loading screen?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        I added loading to prevent the user lag or long loading other's says image's is not loading.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question">
+                    <h3>What is SkyAnime?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        SkyAnime is not an anime, Its a community name i came up to. You can join SkyAnime by clicking <a href="https://animequotes.tk/support">here!</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </body>
+    <%- include("components/footer.ejs") %>
+</html>
+<script>
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach(faq => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    })
+})
+</script>

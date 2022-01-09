@@ -1,0 +1,30 @@
+ <div class="up">
+   <i class="fas fa-angle-up"></i>
+ </div>
+ <script>
+ let up = document.querySelector('.up')
+ window.onscroll = function(){
+   up.classList.toggle('show', window.scrollY >= 1000)
+ }
+ up.onclick = function(){
+   window.scrollTo({behavior: 'smooth', top: 0});
+ }
+</script>
+<style>
+.up {
+  position: fixed;
+  bottom: 30px;
+  right: -70px;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.up i {
+  font-size: 30px;
+  color: #fff;
+}
+.up.show {
+  right: 70px;
+}
+</style>
