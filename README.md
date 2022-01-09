@@ -4,3 +4,7 @@
 [![Discord](https://img.shields.io/discord/911477934332715100?label=SkyAnime&logo=Discord&logoColor=%235865F2&style=for-the-badge)](https://discord.gg/JehBMxdef5)
 
 ## Credits
+SadSenpai#5360
+Takt#3032
+Rurouni Kenshin#3627
+Akari#6421
